@@ -1,0 +1,48 @@
+/*---------------
+   UNIVERSALS
+---------------*/
+body {
+  background-color: lightgrey;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*---------------
+   NAVIGATION
+---------------*/
+.hamburger {
+  background: transparent;
+  height: 35px;
+  margin-left: 20px;
+  position: fixed;
+  top: 20px;
+  z-index: 10;
+  /*width: 35px;*/
+  outline: none;
+}
+.font-size {
+  font-size: 16px;
+}
+.navbar {
+  border: 0;
+  width: 100px;
+  display: none;
+}
+/*---------------
+  HERO SECTION
+---------------*/
+.hero-bg {
+  background-color: pink;
+  height: 500px;
+}
+.boxes {
+  background-color: white;
+  border: 1px solid black;
+  height: 250px;
+}
+.boxes:hover {
+  /*z-index: 10;*/
+  /*transform: translate3d();*/
+  /*transform: translateY(180deg);*/
+}
