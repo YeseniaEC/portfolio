@@ -1,9 +1,6 @@
 /*---------------
    UNIVERSALS
 ---------------*/
-body {
-  background-color: lightgrey;
-}
 a {
   text-decoration: none;
   color: inherit;
@@ -18,7 +15,6 @@ a {
   position: fixed;
   top: 20px;
   z-index: 10;
-  /*width: 35px;*/
   outline: none;
 }
 .font-size {
@@ -27,22 +23,48 @@ a {
 .navbar {
   border: 0;
   width: 100px;
-  display: none;
 }
 /*---------------
   HERO SECTION
 ---------------*/
 .hero-bg {
-  background-color: pink;
   height: 500px;
+  background-image: url(../img/oilmix.jpg);
+  background-size: cover;
 }
-.boxes {
-  background-color: white;
-  border: 1px solid black;
-  height: 250px;
+.hero-section {
+  height: 450px;
+  background-color: rgba(0,0,0,0.3);
 }
-.boxes:hover {
-  /*z-index: 10;*/
-  /*transform: translate3d();*/
-  /*transform: translateY(180deg);*/
+.cube {
+  height: 300px;
+  width: 300px;
+  transform: rotate(45deg);
+  background-color: grey;
+  margin-top: -150px;
+  /*margin-left: -150px;*/
+}
+.inner-cube {
+  height: 300px;
+  width: 300px;
+  /*position: absolute;*/
+  transform: rotate(-45deg);
+  border: 2px solid black;
+  margin-left: -15px;
+  visibility: hidden;
+}
+.cube:hover {
+  transform: rotate(0deg);
+  transition-delay: 90ms;
+  /*background-color: pink;*/
+}
+.inner-cube:hover {
+  transform: rotate(0deg);
+  transition-delay: 1s;
+  visibility: visible;
+}
+.cube-flex {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
 }
